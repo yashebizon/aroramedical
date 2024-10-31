@@ -1,0 +1,135 @@
+/* CSS for the subscribe popup */
+.popup-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;/* Align the popup to the bottom */
+    z-index: 1000;
+
+  }
+  
+  .popup-content {
+    position: relative;
+    padding: 30px 0px;
+    background-color: #fff;
+    border-top: solid 5px #079561;
+    width: 100%;
+    max-width: 100%; /* Ensure full width */
+    transform: translateY(100%); /* Start off-screen */
+    transition: transform 0.7s ease-in-out; /* Smooth transition */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out; /* Add opacity transition */
+  }
+  
+  .popup-content.show {
+    transform: translateY(0); /* Slide up */
+    opacity: 1; /* Make visible */
+  }
+  
+  .subscribe-button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .close-button{
+    position: absolute;
+    right:0px;
+    top:0px;
+    padding: 10px;
+  }
+  .close-button:hover{
+    cursor: pointer;
+  }
+  .subscribe-button {
+    box-shadow: 0px 12px 35px 0px #3B599836;
+    border: 1px solid #079561;
+    color:#079561 ;
+    text-align: center;
+    min-width: 200px;
+    position: absolute;
+    right: 0px;
+    border-radius: 66px;
+    top:0px;
+    bottom: 0px;
+    margin: 0px;
+    background-color: #fff;
+  }
+  .subscribe-button:hover{
+    background: #56d296;
+    color:#fff;
+    border-color:#56d296;
+  }
+
+  .subscribe-form{
+    display:flex;
+    position: relative;
+  }
+
+.subscribe-form input{
+    background: #EAEAEA;
+    min-height:76px ;
+    padding-left: 27px;
+    border-radius: 1000px;
+    width: 100%;
+}
+  
+  .subs-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px -15px;
+  }
+  .subs-row > .subs-col{
+    width: 50%;
+    padding: 0px 15px;
+  }
+  
+  .subs-row > .subs-col h2{
+    margin-bottom: 14px;
+    line-height: 46px;
+  }
+  @media screen and (max-width:1600px) {
+
+  .subscribe-form input{
+    min-height: 60px;
+  }
+}
+  @media screen and (min-width:1601px) {
+    .subs-row > .subs-col p{
+      line-height: 28.98px;
+    }
+    .subscribe-form {
+      margin-top: 20px;
+  }
+    .subs-row > .subs-col{
+      width:49.1%;
+    }
+    .subs-row > .subs-col:last-child{
+      width:50.9%;
+      padding: 0px;
+    }
+  }
+  @media screen and (max-width:991px) {
+    .subscribe-form input{
+      min-height: 56px;
+    }
+    .subscribe-button {
+      min-width: 100px;
+    }
+  }
+  
+  @media screen and (max-width:767px) {
+    .subs-row{
+        flex-direction: column;
+    }
+    .subs-row > .subs-col{
+        width:100%;
+        text-align: center;
+    }
+    .subscribe-form{
+        margin-top: 20px;
+    }
+  }

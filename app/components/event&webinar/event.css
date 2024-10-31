@@ -1,0 +1,162 @@
+/* Upcoming Events */
+
+  
+  p.event-date {
+    color: #5C5C5C;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+  }
+  
+  .event-card > img {
+    background: #079561;
+    padding: 20px;
+  }
+  
+  .event-cards {
+    display: grid; /* Updated to grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    position: relative; /* Ensure proper positioning for pseudo-elements */
+  }
+  
+  .event-details {
+    padding: 25px 0px 0px;
+    min-height: 265px;
+    background-color: #ffff;
+  }
+  
+  .readmore-links a {
+    display: inline-block;
+    margin-top: 17px;
+    color: #079561;
+    border-bottom: solid 1px #079561;
+  }
+  
+  .readmore-links a:hover {
+    color: #56d296;
+    border-color: #56d296;
+  }
+  
+  .partners-section h2 {
+    margin-right: 45px;
+  }
+  
+  .partners-section ul {
+    max-width: calc(100% - 350px);
+  }
+  
+  .upcoming-events {
+    padding: 100px 0 50px;
+    background: #ffff;
+    position: relative;
+    overflow: hidden; /* Ensure content does not overflow */
+  }
+  
+  .event-card {
+    width: 100%; /* Adjusted to fit grid item */
+    position: relative;
+  }
+  
+  .upcoming-events h2 {
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    color: #1A1E1C;
+  }
+  
+  .upcoming-events p.events-details {
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding: 30px 0 30px;
+    color: #ffff;
+    margin-bottom: 24px;
+  }
+  
+  h3.event-title {
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    text-align: left;
+    color: #1A1E1C;
+    margin: 12px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .partners-section li > a > img {
+    box-shadow: 0px 4px 28px 0px #1B1B1B1A;
+  }
+  
+  .feature-block.feature-group img {
+    max-width: 253px;
+  }
+  
+  p.event-time {
+    font-family: Plus Jakarta Sans;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.875rem;
+    text-align: left;
+    display: flex;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #5C5C5C;
+  }
+  
+  button.view-all, button.load-more {
+    box-shadow: 0px 12px 35px 0px #07956136;
+    background: #ffff;
+    padding: 12px;
+    width: 175px;
+    height: 49px;
+    border-radius: 66px;
+    color: #079561;
+    margin: 20px auto; /* Adjusted margin for better placement */
+    display: block;
+    font-weight: 700;
+    border: 1px solid #079561;
+  }
+  
+  button.view-all:hover, button.load-more:hover {
+    background-color: #DEF0E9;
+  }
+  
+
+   
+  .Trust_heading {
+    text-align: center;
+    font-weight: bold;
+    line-height: 46px;
+    font-size: 38px; /* Adjust the size as needed */
+    margin-top: 85px; /* Adjust the margin as needed */
+  }
+  .event-img{
+    height:auto;
+  }
+  .select-month{
+    margin-left: 25px;
+    margin-right: 35px;
+    height:49px;
+    width: 178px;
+  }
+  .filter-month-text{
+    width: 110px;
+    height: 30px;
+    margin-right: 45px;
+  }
+  .select-course{
+    height:49px;
+    width:319px;
+  }
+  .course-text{
+    width: 71px;
+    height:30px;
+  }

@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/layout.tsx",
+    "app/api/payment-success/page.js",
+    "app/api/checkout-intent/route.js",
+    "app/not-found.js",
+    "app/privacy-policy/page.js",
+    "app/terms-and-conditions/page.js",
+    "app/about-us/page.js",
+    "app/components/About-us/Podcaste.js",
+    "app/refunds/page.js",
+    "app/acceptable-use-policy/page.js",
+    "app/components/About-us/Ourpartner.js",
+    "app/components/About-us/OurpartnerModal.js",
+    "app/components/About-us/Meet-Our-Team.js",
+    "app/components/About-us/TeamMemberModal.js",
+    "app/components/About-us/SpokenComponent.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

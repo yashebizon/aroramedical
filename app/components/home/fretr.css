@@ -1,0 +1,98 @@
+
+.section-wrap {
+  padding: 120px 0 220px;
+}
+.profile-block {
+  padding: 55px;
+  position: relative;
+}
+.profile-block img {
+  position: relative;
+  z-index: 99;
+  height: 560px;
+  object-fit: cover;
+}
+.profile-block::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 10px;
+  background: url("../../../public/images/green-ellipse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 232px;
+  height: 232px;
+  z-index: 9;
+  
+}
+.profile-block::after {
+  content: "";
+  position: absolute;
+  left: 183px;
+  bottom: -72px;
+  background: url("../../../public/images/green-dot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 123px;
+  height: 123px;
+  z-index: 9;
+}
+.description-box {
+  z-index: 99;
+  bottom: -60px;
+}
+ 
+.learn_block_box {
+  padding: 80px 0 40px;
+}
+p.caption {
+  padding-top: 85px;
+}
+.learn_block_box {
+  position: relative;
+}
+ 
+p.hover-show {
+  font-family: Plus Jakarta Sans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  display: none;
+  color: #fff;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translate(0%, 50%);
+  z-index: 9;
+}
+ 
+.learn_block_box:hover .inner-custom::before  {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  background: #00000099;
+  box-shadow: 0px 6px 24px 0px #1B1B1B0A;
+  border: 1px solid #F8F8F8;
+}
+ 
+.learn_block_box:hover p.hover-show{
+  display: block;
+}
+.learn_block_box:hover .learn_icon {
+  transform: scale(1.2);
+  transition: .3s;
+  position: relative;
+  z-index: 5;
+}
+ 
+ 
